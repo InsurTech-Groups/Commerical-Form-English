@@ -42,12 +42,16 @@ function Address() {
 
     if (street === " " || street === "") {
       toast.error('Please enter a valid address');
+      return
     }
-
-    street = street + ' ' + secondary;
+    else {
+      street = street + ' ' + secondary;
     businessAddress(street, city, state, zipcode);
    
     navigate('/name')
+    }
+
+    
   }
 
   return (

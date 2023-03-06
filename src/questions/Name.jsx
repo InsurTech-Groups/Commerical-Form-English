@@ -44,7 +44,7 @@ const Name = () => {
     else {
       setIsButtonDisabled(false);
       nameInformationData(first, last);
-      
+      navigate('/email-phone')
     }
     
     

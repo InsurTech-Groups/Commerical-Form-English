@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import CTA from "../components/CTA";
 import { LinkWithQuery } from "../components/BackButton";
 
-import { coverageData } from "../data/addToUserData";
+import { businessStructureData } from "../data/addToUserData";
 
 function BusinessType() {
 
@@ -27,7 +27,7 @@ function BusinessType() {
     e.preventDefault();
     let v = e.currentTarget.value;
 
-    coverageData(v)
+    businessStructureData(v)
 
     navigate('/business-profession')
 

@@ -8,7 +8,10 @@ export const landingPageData = (id, zipCodeValue, cityValue, stateValue, url) =>
   userData.zip_code = zipCodeValue;
   userData.city = cityValue;
   userData.state = stateValue;
-  userData.trustedForm = url;
+
+  let tF = document.getElementById('xxTrustedFormToken_0').value;
+
+  userData.trusted_form_token = tF;
 
   console.log('userData', userData);
 

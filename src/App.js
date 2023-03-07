@@ -20,6 +20,8 @@ import Employees from './questions/Employees';
 import Address from './questions/Address';
 import Name from './questions/Name';
 import EmailPhone from './questions/EmailPhone';
+import Submit from './questions/Submit';
+import ThankYou from './questions/ThankYou';
 
 
 export default function App() {
@@ -48,6 +50,8 @@ export default function App() {
         <Route path='/address' element={<Address />} />
         <Route path='/name' element={<Name />} />
         <Route path='/email-phone' element={<EmailPhone />} />
+        <Route path='/submit' element={<Submit />} />
+        <Route path='/thank-you' element={<ThankYou />} />
       </Routes>
 
       <Footer/>

@@ -19,10 +19,10 @@ export default function NavBar(props){
           <div className="ml-10 space-x-4">
             
             <a
-              href="tel:18559071606"
+              href="tel:18777141714"
               className="inline-block rounded-md border border-transparent bg-button-purple py-2 px-4 text-base font-medium text-white hover:bg-indigo-50 hover:text-button-purple"
             >
-              	(855) 907-1606
+              	(877) 714-1714
             </a>
           </div>
         </div>

@@ -1,12 +1,11 @@
 import { userData } from "./userData";
 import { toast } from "react-toastify";
 
-export const postDataToJangle = () => {
+export const postDataToJangle = async () => {
 
   //get current date
   var today = new Date();
   console.log(today)
-
 
 
   let userId = userData.userId
@@ -82,10 +81,11 @@ export const postDataToJangle = () => {
   })
     .then(response => response.json())
     .then(data => {
-      toast.success('Form Submitted')
+      toast.success('Form Submitted');
     })
     .catch((error) => {
       toast.error('Error in submitting your form!')
+      return
     });
   
 

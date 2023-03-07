@@ -54,7 +54,7 @@ let email = document.getElementById('email').value
       let dispo = data.is_disposable_email.value;
       let delivery = data.deliverability
       let format = data.is_valid_format.value;
-
+ 
       console.log(format)
       if (autoCorrect != ''){
         setIsAutoCorrect(true)
@@ -117,6 +117,7 @@ let email = document.getElementById('email').value
       else {
         phoneInformationData(phone);
         postDataToJangle();
+        navigate('/submit')
       }
     })
     .catch(error => {

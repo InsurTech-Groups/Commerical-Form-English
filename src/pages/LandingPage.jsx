@@ -82,6 +82,9 @@ function LandingPage() {
         </dl>
       </div>
       </div>
+
+<div className="elfsight-app-c43abc95-912b-4592-8284-6ee3d320a5a8 bg-input-purple"></div>
+
         <FAQ />
     </div>
   );

@@ -60,7 +60,7 @@ const BusinessFounded = () => {
 
   return (
     <div className="bg-dark-purple pb-10">
-    <Banner setProgress={5} />
+    <Banner setProgress={50} />
     
 
 

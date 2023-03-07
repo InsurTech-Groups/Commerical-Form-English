@@ -51,36 +51,60 @@ export default function ThankYou() {
           
             <div className='pt-10'>
            
-      <div className="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
-        <div className="overflow-hidden rounded-lg bg-button-purple shadow-xl lg:grid lg:grid-cols-2 lg:gap-4">
-          <div className="px-6 pt-10 pb-12 sm:px-16 sm:pt-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
-            <div className="lg:self-center">
-              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                <span className="block">A licensed agent will be with you shortly!</span>
-              </h2>
-              <p className="mt-4 text-lg leading-6 text-white">
-                Want to talk to an agent faster? Call us and we can help you get quoted today!
-              </p>
-              <a
-                href="tel:18777141714"
-                className="mt-8 inline-flex items-center rounded-md border border-transparent bg-input-purple px-5 py-3 text-base font-medium text-white shadow hover:bg-indigo-50 hover:text-button-purple"
-              >
-                Call An Agent Now 
-
-                
-                
-                             </a>
-            </div>
-          </div>
-          <div className="aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
-            <img
-              className="translate-x-1 translate-y-1 transform rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
-              src={Agent}
-              alt="App screenshot"
-            />
+            <div className="relative bg-gray-900">
+      <div className="relative h-80 overflow-hidden bg-button-purple md:absolute md:left-0 md:h-full md:w-1/3 lg:w-1/2">
+        <img
+          className="h-full w-full object-cover"
+          src={Agent}
+          alt=""
+        />
+        <svg
+          viewBox="0 0 926 676"
+          aria-hidden="true"
+          className="absolute left-24 -bottom-24 w-[57.875rem] transform-gpu blur-[118px]"
+        >
+          <path
+            fill="url(#60c3c621-93e0-4a09-a0e6-4c228a0116d8)"
+            fillOpacity=".4"
+            d="m254.325 516.708-90.89 158.331L0 436.427l254.325 80.281 163.691-285.15c1.048 131.759 36.144 345.144 168.149 144.613C751.171 125.508 707.17-93.823 826.603 41.15c95.546 107.978 104.766 294.048 97.432 373.585L685.481 297.694l16.974 360.474-448.13-141.46Z"
+          />
+          <defs>
+            <linearGradient
+              id="60c3c621-93e0-4a09-a0e6-4c228a0116d8"
+              x1="926.392"
+              x2="-109.635"
+              y1=".176"
+              y2="321.024"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stopColor="#776FFF" />
+              <stop offset={1} stopColor="#FF4694" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div className="relative mx-auto max-w-7xl py-24 sm:py-32 lg:py-40 lg:px-8">
+        <div className="pr-6 pl-6 md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2 lg:pl-24 lg:pr-0 xl:pl-32">
+          <h2 className="text-base font-semibold leading-7 text-indigo-400">Ready To Speak To An Agent?</h2>
+          <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">We’re here to help</p>
+          <p className="mt-6 text-base leading-7 text-gray-300">
+            Ready to get started on your quote? Give an agent a call, have your own account manager persoally help you with your quote, and get a price you love! 
+          </p>
+          <div className="mt-8">
+          <a
+          href="tel:8777141714"
+          className="mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-gradient-to-r 
+          from-purple-500
+          to-purple-800
+          via-purple-400 animate-text ease-in
+          px-9 py-3 text-xl font-medium text-white  sm:w-auto"
+        >
+          	👉 (877) 714-1714 👈
+        </a>
           </div>
         </div>
       </div>
+    </div>
     </div>
            
           </div> 

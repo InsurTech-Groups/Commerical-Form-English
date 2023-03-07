@@ -52,7 +52,7 @@ const Name = () => {
 
   return (
     <div className="bg-dark-purple pb-10">
-    <Banner setProgress={100} />
+    <Banner setProgress={90} />
     
 
 

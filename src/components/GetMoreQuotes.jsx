@@ -3,7 +3,18 @@ import React from 'react'
 const GetMoreQuotes = () => {
 
   const quotes = [
- {id: 'life', title: 'Get A Life Insurance Quote', href: "https://www.ladderlife.com/apply/quick-start?utm_source=insurtechgroups", imageUrl: 'https://images.unsplash.com/photo-1531983412531-1f49a365ffed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80', subHead: 'Get a life insurance in minutes and buy online with no agent!'}
+ {id: 'life', title: 'Get A Life Insurance Quote', href: 
+      "https://www.ladderlife.com/apply/quick-start?utm_source=insurtechgroups", imageUrl: 'https://images.unsplash.com/photo-1531983412531-1f49a365ffed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80', subHead: 'Get a life insurance in minutes and buy online with no agent!'
+    },
+    
+ {id: 'auto', title: 'Get A Auto Insurance Quote', href: 
+      "https://www.insurtechgroups.com/forms/auto-insurance", imageUrl: 'https://images.unsplash.com/photo-1484373030460-8de45ac8796d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNTE3NDZ8MHwxfHNlYXJjaHw0fHxmYW1pbHklMjBjYXJ8ZW58MHx8fHwxNjYyMDU5OTQ1&ixlib=rb-1.2.1&q=80&w=1080', subHead: 'Get a free auto insurance quote today and see how much you could save!'
+    },
+ 
+    {id: 'home', title: 'Get A Home Insurance Quote', href: 
+    "https://www.insurtechgroups.com/forms/auto-insurance", imageUrl: 'https://home.insurtechgroups.com/static/media/homeLanding.aed277c55ad71d82c692.jpg', subHead: 'Get a free home insurance quote today!'
+  },
+ 
   ]
 
   return (

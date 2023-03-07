@@ -92,7 +92,8 @@ const BusinessRevenue = () => {
                       className="appearance-none p-3  text-lg font-semibold leading-none bg-white rounded text-blue-500 zipInput"
                       type="text"
                       name="revenue"
-                      id="revenue"
+                  id="revenue"
+                  pattern="\d*"
                   placeholder="105,000"
                   prefix='$'
                   onChange={() => {

@@ -184,7 +184,8 @@ let email = document.getElementById('email').value
                     defaultCountry="US"
                     country="US"
                     className="w-full lg:text-xl text-center bg-input-purple text-white text-md rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-5 p-2.5"
-                    id="phone_home"
+                  id="phone_home"
+                  pattern="\d*"
                     placeholder="Phone Number"
                     name="phone_home"
                   onChange={() => {

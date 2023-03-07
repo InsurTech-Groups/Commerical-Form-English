@@ -84,7 +84,8 @@ const BusinessFounded = () => {
            
             <input
                           type="number"
-                          name="founded"
+                  name="founded"
+                  pattern="\d*"
                           id="founded"
                   placeholder="YYYY"
                   required

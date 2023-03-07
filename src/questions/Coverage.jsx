@@ -19,7 +19,6 @@ function Coverage() {
     { title: 'Professional Liability (E&O)', id: 'professional-liability', value: 'Professional Liability', key: '3' },
     { title: 'Property Insurance', id: 'property-insurance', value: 'Property Insurance', key: '4' },
     { title: 'Worker Compenstation', id: 'worker-compenstation', value: 'Worker Compenstation', key: '5' },
-    { title: 'Other', id: 'other', value: 'other', key: '6' },
 	
   ]
   

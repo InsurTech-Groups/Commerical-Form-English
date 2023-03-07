@@ -4,6 +4,7 @@ import BusinessInsurance from '../assets/BusinessInsurance.json';
 import "../styles/forms.css";
 import Agent from '../assets/agent.jpg';
 import GetMoreQuotes from '../components/GetMoreQuotes';
+import WhyUsFeatures from '../components/WhyUsFeatures';
 
 
 
@@ -41,6 +42,8 @@ export default function ThankYou() {
       </div>
     </div>
     <Lottie animationData={BusinessInsurance} loop={true} style={{height: '300px'}}  />
+        <WhyUsFeatures />
+        <div className="elfsight-app-c43abc95-912b-4592-8284-6ee3d320a5a8 w-full mb-5 pb-4 bg-input-purple"></div>
 
         <GetMoreQuotes/>
         <div className="m-w-1/2 space-y-8">

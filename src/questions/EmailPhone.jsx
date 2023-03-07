@@ -193,7 +193,24 @@ let email = document.getElementById('email').value
                   }}
                   />
 
-            </div>
+              </div>
+              
+              <p className="text-white lg:w-1/2 md:w-full sm:w-full">
+                By clicking, “Get My Free Quote” below, I am providing my consent for Insurtech Groups and its service providers, Aktify and BoomAI, to use automated technology, including calls, texts, prerecorded messages and emails, to contact me about insurance offers at the number and email provided even if my number is on a corporate, state or national do not call list. This consent is not required to make a purchase.  Clicking the button below constitutes your electronic signature. <a
+                    className="text-button-purple "
+                    href="https://www.insurtechgroups.com/terms-conditions"
+                  >
+                    {" "}
+                    Terms & conditions
+                  </a>{" "} and <a
+                    href="https://www.insurtechgroups.com/privacy-policy"
+                    className="text-button-purple"
+                  >
+                    Privacy policy
+                  </a>{" "} apply. Msg & data rates may apply. Text “stop” to unsubscribe.
+ 
+
+                </p>
 
             <button
           type="submit"

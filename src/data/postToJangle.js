@@ -82,7 +82,7 @@ export const postDataToJangle = async () => {
     .then(response => response.json())
     .then(data => {
       toast.success('Form Submitted');
-      console.log(response.json())
+      console.log(data.json())
     })
     .catch((error) => {
       toast.error('Error in submitting your form!')

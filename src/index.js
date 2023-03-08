@@ -5,7 +5,6 @@ import './index.css';
 import App from './App';
 import Bugsnag from '@bugsnag/js'
 import BugsnagPluginReact from '@bugsnag/plugin-react'
-import { inject } from '@vercel/analytics';
 
 
 //TODO: Add Bugsnag
@@ -13,7 +12,7 @@ import { inject } from '@vercel/analytics';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
-inject();
+
 
 // Bugsnag.start({
 //   apiKey: '86cc05e770db4d552eaabcc2a6228b41',

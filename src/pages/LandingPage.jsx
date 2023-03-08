@@ -1,12 +1,12 @@
 import React, { useEffect} from "react";
 import "../styles/LandingPage.css";
-import LandingHeaderPic from "../assets/landingPageHeader.jpg";
+import LandingHeaderPic from "../assets/HeaderImage.png";
 import { BoltIcon, GlobeAltIcon, ScaleIcon } from '@heroicons/react/24/outline';
 import ZipCode from '../apis/zipCode'
 import FAQ from "../components/faq";
 import { ipAddress } from "../apis/ipCollection";
 import { trustedForm } from "../apis/trustedForm";
-
+import GetMoreQuotes from "../components/GetMoreQuotes";
 function LandingPage() {
   
 
@@ -38,11 +38,11 @@ function LandingPage() {
 
 
   return (
-    <div>
-      <main className="lg:relative bg-dark-purple">
+    <div className="bg-dark-purple">
+      <main className="lg:relative">
         <div className="mx-auto w-full max-w-7xl pt-16 pb-20 text-center lg:py-48 lg:text-left">
           <div className="px-4 sm:px-8 lg:w-1/2 xl:pr-16">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+            <h1 className="text-3xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span className="block xl:inline">Get Your Free</span> <br />
               <span className="block font-extrabold text-transparent text-6xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 xl:inline">
                 Commercial Insurance {' '}
@@ -85,7 +85,11 @@ function LandingPage() {
 
 <div className="elfsight-app-c43abc95-912b-4592-8284-6ee3d320a5a8 bg-input-purple"></div>
 
-        <FAQ />
+     
+      <FAQ />
+
+      <GetMoreQuotes/>
+      
     </div>
   );
 }

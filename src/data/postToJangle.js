@@ -1,4 +1,3 @@
-import { response } from "express";
 import { userData } from "./userData";
 import { toast } from "react-toastify";
 

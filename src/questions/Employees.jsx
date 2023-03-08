@@ -15,15 +15,15 @@ function Employees() {
   let buttons = [
     { title: '1-10', id: '1', value: '1-10', key: '1' },
     
-    { title: '11-50', id: '11', value: '11-30 ', key: '1' },
+    { title: '11-50', id: '11', value: '11-30 ', key: '2' },
    
-    { title: '51-100', id: '11', value: '11-30 ', key: '1' },
+    { title: '51-100', id: '11', value: '11-30 ', key: '3' },
     
-    { title: '101-250', id: '11', value: '11-30 ', key: '1' },
+    { title: '101-250', id: '11', value: '11-30 ', key: '4' },
     
-    { title: '251-500', id: '11', value: '11-30 ', key: '1' },
+    { title: '251-500', id: '11', value: '11-30 ', key: '5' },
     
-    { title: '501+', id: '11', value: '11-30 ', key: '1' },
+    { title: '501+', id: '11', value: '11-30 ', key: '6' },
 
 
 	

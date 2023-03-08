@@ -35,7 +35,8 @@ const EmailPhone = () => {
   function changeText() {
     document.getElementById('email').value = autoCorrectText;
     setIsAutoCorrect(false);
-    emailInformationData(autoCorrectText)
+    emailInformationData(autoCorrectText);
+    
   }
 
   const handleEmail = (e) => {

@@ -1,3 +1,4 @@
+import { response } from "express";
 import { userData } from "./userData";
 import { toast } from "react-toastify";
 
@@ -82,6 +83,7 @@ export const postDataToJangle = async () => {
     .then(response => response.json())
     .then(data => {
       toast.success('Form Submitted');
+      console.log(response.json())
     })
     .catch((error) => {
       toast.error('Error in submitting your form!')

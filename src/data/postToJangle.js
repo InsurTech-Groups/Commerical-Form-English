@@ -22,6 +22,7 @@ export const postDataToJangle = async () => {
   let businessRevenue = userData.business_revenue
   let businessEmployees = userData.business_employees
   let businessAddress = userData.business_address
+  let businessCity = userData.business_city
   let  businessState = userData.business_state
   let businessZipcode = userData.business_zipcode
   let firstName = userData.first_name

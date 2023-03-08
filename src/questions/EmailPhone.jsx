@@ -131,7 +131,7 @@ let email = document.getElementById('email').value
   }
   return (
     <div className="bg-dark-purple pb-10">
-    <Banner setProgress={90} />
+    <Banner setProgress={100} />
     
 
 
@@ -142,16 +142,17 @@ let email = document.getElementById('email').value
           <h2 className="mt-4 text-center text-4xl font-extrabold text-white">
             What Is Your {' '}
             <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 xl:inline">
-             Name
+             Email & Phone
             </span>
              ?
           </h2>
         </div>
         <form className="mt-8 space-y-6">
-          <div className=" space-y-6 flex flex-col  items-center justify-center">
+          <div className=" space-y-6 flex flex-col  lg:w-1/2 md:w-full sm:w-full mx-auto">
             <div className="justify-center w-full">
          
-                <div className='mb-5'>
+           
+            <div className='mb-5'>
                 <input
                           type="email"
                           name="email"
@@ -194,9 +195,12 @@ let email = document.getElementById('email').value
                   }}
                   />
 
-              </div>
-              
-              <p className="text-white lg:w-1/2 md:w-full sm:w-full">
+
+            </div>
+
+              <div className='min-w-1/2'>
+
+ <span className="text-white ">
                 By clicking, “Get My Free Quote” below, I am providing my consent for Insurtech Groups and its service providers, Aktify and BoomAI, to use automated technology, including calls, texts, prerecorded messages and emails, to contact me about insurance offers at the number and email provided even if my number is on a corporate, state or national do not call list. This consent is not required to make a purchase.  Clicking the button below constitutes your electronic signature. <a
                     className="text-button-purple "
                     href="https://www.insurtechgroups.com/terms-conditions"
@@ -211,7 +215,8 @@ let email = document.getElementById('email').value
                   </a>{" "} apply. Msg & data rates may apply. Text “stop” to unsubscribe.
  
 
-                </p>
+                </span>
+              </div>
 
             <button
           type="submit"
@@ -221,7 +226,7 @@ let email = document.getElementById('email').value
                 onClick={handleNextStep}
                 
           >
-          Next
+          Get My Free Quotes
         </button>
           </div>
 

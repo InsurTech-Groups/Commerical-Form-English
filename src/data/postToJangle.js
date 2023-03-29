@@ -77,7 +77,6 @@ export const postDataToJangle = async () => {
 //   //axios post request to https://leads.ricochet.me/api/v1/lead/create/COMM-Commercial-Internal-Form/?token=ea527c772f0fe84238e916ff02f32ae8
 //  let url = 'https://leads.ricochet.me/api/v1/lead/create/COMM-Commercial-Internal-Form/?token=ea527c772f0fe84238e916ff02f32ae8'
 
-<<<<<<< HEAD
   fetch('https://api.jangl.com/v2/home_insurance/capture', {
     method: 'POST',
     headers: {

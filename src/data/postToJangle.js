@@ -1,6 +1,9 @@
 import { userData } from "./userData";
 import { toast } from "react-toastify";
-import axios from "axios";
+
+
+//get postDataToBackEnd
+
 
 export const postDataToJangle = async () => {
 
@@ -39,8 +42,7 @@ export const postDataToJangle = async () => {
       "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36",
       "landing_page_url": "https://www.commercial.insurtechgroups.com",
       "tcpa_compliant": true,
-        'tcpa_consent_text': "By clicking Get My Free Quote below, I am agreeing to receive text messages from InsurTech Groups and business partners. I provide my signature expressly consenting to recurring contact from Insurtech Groups or its business partners at the number I provided regarding products or services via live, automated or prerecorded telephone call, text message, or email. I understand that my telephone company may impose charges on me for these contacts, and I am not required to enter into this agreement as a condition of purchasing property, goods, or services. I understand that I can revoke this consent at any time. Terms & conditions & Privacy policy apply.",
-      'trusted_form_url': ''
+      'tcpa_consent_text': "By clicking Get My Free Quote below, I am agreeing to receive text messages from InsurTech Groups and business partners. I provide my signature expressly consenting to recurring contact from Insurtech Groups or its business partners at the number I provided regarding products or services via live, automated or prerecorded telephone call, text message, or email. I understand that my telephone company may impose charges on me for these contacts, and I am not required to enter into this agreement as a condition of purchasing property, goods, or services. I understand that I can revoke this consent at any time. Terms & conditions & Privacy policy apply."
       },
 
       "contact": {
@@ -70,8 +72,12 @@ export const postDataToJangle = async () => {
       
   
   
-  }
+    }
+  
+//   //axios post request to https://leads.ricochet.me/api/v1/lead/create/COMM-Commercial-Internal-Form/?token=ea527c772f0fe84238e916ff02f32ae8
+//  let url = 'https://leads.ricochet.me/api/v1/lead/create/COMM-Commercial-Internal-Form/?token=ea527c772f0fe84238e916ff02f32ae8'
 
+<<<<<<< HEAD
   fetch('https://api.jangl.com/v2/home_insurance/capture', {
     method: 'POST',
     headers: {
@@ -90,5 +96,6 @@ export const postDataToJangle = async () => {
       toast.error('There was an error submitting your form. Please try again.')
       console.error('Error:', error);
     });
+
 
 }

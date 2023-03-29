@@ -152,11 +152,6 @@ function ZipCode() {
     }
     else { 
 
-      
-      //TODO: Add this data into userData.js
-      // initialFirebaseFormValues(id, zipCodeValue, cityValue, stateValue, ipValue);
-
-
       let url = document.getElementById('trusted_form_url_0').value;
 
   

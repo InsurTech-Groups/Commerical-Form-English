@@ -72,41 +72,23 @@ export const postDataToJangle = async () => {
   
   }
 
-
-  fetch('https://hooks.zapier.com/hooks/catch/13124392/3bsi2io/', {
+  fetch('https://api.jangl.com/v2/home_insurance/capture', {
     method: 'POST',
-  
-    body: data
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': 'Token e6faa14296e53d324f7115f2641b51c163a97246'
+    },
+    body: JSON.stringify(data)
+
   })
     .then(response => response.json())
     .then(data => {
-      toast.success('Form Submitted');
-      console.log(data)
+      toast.success('Your Form Has Been Submitted!')
+      console.log('data', data)
     })
     .catch((error) => {
-      toast.error('Error in submitting your form!')
-      return
+      toast.error('There was an error submitting your form. Please try again.')
+      console.error('Error:', error);
     });
-  
-
-
-  // axios.post('https://leads.ricochet.me/api/v1/lead/create/COMM-Commercial-Internal-Form/?token=ea527c772f0fe84238e916ff02f32ae8&cid=General', {
-  //   method: 'POST',
-  //   headers: {
-  //     'Content-Type': 'application/json',
-  //     'Access-Control-Allow-Origin': '*'
-  //   },
-  //   body: data
-  // })
-  //   .then(response => response.json())
-  //   .then(data => {
-  //     toast.success('Form Submitted');
-  //     console.log(data)
-  //   })
-  //   .catch((error) => {
-  //     toast.error('Error in submitting your form!')
-  //     return
-  //   });
-
 
 }

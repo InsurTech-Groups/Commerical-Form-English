@@ -24,7 +24,7 @@ export const postDataToJangle = async () => {
   let businessProfession = userData.business_profession
   let businessFounded = userData.business_founded
   let businessRevenue = userData.business_revenue
-  let businessEmployees = userData.business_employees
+  let businessEmployees = parseFloat(userData.business_employees)
   let businessAddress = userData.business_address
   let businessCity = userData.business_city
   let  businessState = userData.business_state
@@ -40,7 +40,8 @@ export const postDataToJangle = async () => {
       "originally_created": today,
       "originally_created_by": userId,
       "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36",
-      "landing_page_url": "https://www.commercial.insurtechgroups.com",
+        "landing_page_url": "https://www.commercial.insurtechgroups.com",
+        "trusted_form_cert_url": trustedForm,
       "tcpa_compliant": true,
       'tcpa_consent_text': "By clicking Get My Free Quote below, I am agreeing to receive text messages from InsurTech Groups and business partners. I provide my signature expressly consenting to recurring contact from Insurtech Groups or its business partners at the number I provided regarding products or services via live, automated or prerecorded telephone call, text message, or email. I understand that my telephone company may impose charges on me for these contacts, and I am not required to enter into this agreement as a condition of purchasing property, goods, or services. I understand that I can revoke this consent at any time. Terms & conditions & Privacy policy apply."
       },
@@ -57,27 +58,22 @@ export const postDataToJangle = async () => {
         "ip_address": ip
       },
       "data": {
-        "business_name": businessName,
-        "business_address": businessAddress,
-        "business_city": businessCity,
-        "business_state": businessState,
-        "business_zipcode": businessZipcode,
-        "business_founded": businessFounded,
-        "business_revenue": businessRevenue,
-        "business_employees": businessEmployees,
-        "business_profession": businessProfession,
-        "business_structure": businessStructure,
+        "name": businessName,
+        "address": businessAddress,
+        "zipcode": businessZipcode,
+        "year_founded": businessFounded,
+        "revenue": businessRevenue,
+        "num_of_employees": businessEmployees,
+        "sector": businessProfession,
+        "corporation_type": businessStructure,
         "coverage_needed": coverage
     }
       
   
   
     }
-  
-//   //axios post request to https://leads.ricochet.me/api/v1/lead/create/COMM-Commercial-Internal-Form/?token=ea527c772f0fe84238e916ff02f32ae8
-//  let url = 'https://leads.ricochet.me/api/v1/lead/create/COMM-Commercial-Internal-Form/?token=ea527c772f0fe84238e916ff02f32ae8'
 
-  fetch('https://api.jangl.com/v2/home_insurance/capture', {
+  fetch('https://api.jangl.com/v2/commercial_insurance/capture', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
